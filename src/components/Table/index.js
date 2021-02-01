@@ -1,9 +1,9 @@
 import React from 'react'
-import TableBody from "./TableBody"
+import TableBody from "../TableBody"
 
 function Table(props) {
     const { results } = props
-    
+
     return (
         <table className="table">
             <thead className="thead-dark">
@@ -15,11 +15,9 @@ function Table(props) {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    {results?.map((result, index) => (
-                        <TableBody result={result} index={index}/>
-                    ))}
-                </tr>
+                {results?.map((result, index) => (
+                    <TableBody result={result} index={index} />
+                ))}
             </tbody>
         </table>
     )
