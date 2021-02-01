@@ -1,5 +1,6 @@
 import React from 'react'
 import TableBody from "../TableBody"
+import './style.css'
 
 function Table(props) {
     const { results } = props
@@ -8,10 +9,29 @@ function Table(props) {
         <table className="table">
             <thead className="thead-dark">
                 <tr>
-                    <th scope="col">Photo</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Date of Birth</th>
-                    <th scope="col">Phone</th>
+                    <th scope="col">
+                        Photo
+                    </th>
+                    <th scope="col">
+                        <button type="button">
+                            Name
+                        </button>
+                    </th>
+                    <th scope="col">
+                        <button type="button">
+                            Date of Birth
+                        </button>
+                    </th>
+                    <th scope="col">
+                        <button type="button">
+                            Email
+                        </button>
+                    </th>
+                    <th scope="col">
+                        <button type="button">
+                            Phone
+                        </button>
+                    </th>
                 </tr>
             </thead>
             <tbody>
