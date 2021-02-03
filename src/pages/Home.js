@@ -20,6 +20,7 @@ class Home extends Component {
         return (
             <div>
                 {this.state.results.length ? <Table results={this.state.results}/> : ""}
+                {/* if there are results then load the Table component.  If not load empty string.*/}
             </div>
         )
     }
